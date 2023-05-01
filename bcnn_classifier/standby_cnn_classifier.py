@@ -23,19 +23,19 @@ def model():
     mdl.add(Conv2D(
         input_shape=(150,150,3), 
         filters=8, 
-        kernel_size=(5,5),
+        kernel_size=(3,3),
         activation='relu'
         )
     )
     mdl.add(MaxPooling2D(2,2))
     
-    mdl.add(Conv2D(16, (5,5), activation='relu'))
+    mdl.add(Conv2D(16, (3,3), activation='relu'))
     mdl.add(MaxPooling2D(2,2))
 
-    mdl.add(Conv2D(32, (5,5), activation='relu'))
+    mdl.add(Conv2D(32, (3,3), activation='relu'))
     mdl.add(MaxPooling2D(2,2))
 
-    mdl.add(Conv2D(64, (5,5), activation='relu'))
+    mdl.add(Conv2D(64, (3,3), activation='relu'))
     mdl.add(MaxPooling2D(2,2))
 
     mdl.add(Flatten())
@@ -50,26 +50,26 @@ def model():
 
     return mdl
 
-mdl = model()
+# mdl = model()
 
-mdl.summary()
+# mdl.summary()
 
-mdl.compile(
-    loss='categorical_crossentropy',
-    optimizer=Adam(learning_rate=0.005),
-    metrics=['accuracy']
-    )
+# mdl.compile(
+#     loss='categorical_crossentropy',
+#     optimizer=Adam(learning_rate=0.005),
+#     metrics=['accuracy']
+#     )
 
-history_mdl = mdl.fit(
-    trgen,
-    epochs=100,
-    verbose=1
-    )
+# history_mdl = mdl.fit(
+#     trgen,
+#     epochs=100,
+#     verbose=1
+#     )
 
-try:
-    history_mdl.save("/Users/karljaehnig/Repositories/bayesian_NN_experiments/bcnn_classifier/saved_models/standby_intel_model")
-except:
-    mdl.save("/Users/karljaehnig/Repositories/bayesian_NN_experiments/bcnn_classifier/saved_models/standby_intel_model")
+# try:
+#     history_mdl.save("/Users/karljaehnig/Repositories/bayesian_NN_experiments/bcnn_classifier/saved_models/standby_intel_model")
+# except:
+#     mdl.save("/Users/karljaehnig/Repositories/bayesian_NN_experiments/bcnn_classifier/saved_models/standby_intel_model")
 
 
 
