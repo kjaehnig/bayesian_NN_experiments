@@ -1,2 +1,2 @@
-model_checkpoint_path: "btest"
-all_model_checkpoint_paths: "btest"
+model_checkpoint_path: "bmdl2_weights"
+all_model_checkpoint_paths: "bmdl2_weights"

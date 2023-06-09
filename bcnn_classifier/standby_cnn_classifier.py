@@ -22,32 +22,82 @@ def model():
 
     mdl.add(Conv2D(
         input_shape=(150,150,3), 
-        filters=8, 
+        filters=32, 
         kernel_size=(3,3),
-        activation='relu'
+        activation='relu',
+        padding='same',
+        # kernel_initializer='normal'
         )
     )
     mdl.add(MaxPooling2D(2,2))
-    
-    mdl.add(Conv2D(16, (3,3), activation='relu'))
-    mdl.add(MaxPooling2D(2,2))
 
-    mdl.add(Conv2D(32, (3,3), activation='relu'))
-    mdl.add(MaxPooling2D(2,2))
+    # mdl.add(Conv2D(
+    #     filters=32, 
+    #     kernel_size=(3,3),
+    #     activation='relu',
+    #     padding='same',
+    #     # kernel_initializer='normal'
+    #     )
+    # )
 
-    mdl.add(Conv2D(64, (3,3), activation='relu'))
+
+    # mdl.add(MaxPooling2D(2,2))
+
+    mdl.add(Conv2D(64, (3,3), 
+            activation='relu',
+            padding='same',
+            # kernel_regularizer='l2',
+            # kernel_initializer='normal'
+            ))
+
     mdl.add(MaxPooling2D(2,2))
+    # mdl.add(BatchNormalization())
+
+    mdl.add(Conv2D(64, (3,3), 
+            activation='relu',
+            padding='same',
+            # kernel_regularizer='l2',
+            # kernel_initializer='normal'
+            ))
+
+    mdl.add(MaxPooling2D(2,2))
+    # mdl.add(BatchNormalization())
+
+    mdl.add(Conv2D(128, (3,3), 
+            activation='relu',
+            padding='same',
+            # kernel_regularizer='l2',
+            # kernel_initializer='normal'
+            ))
+
+    mdl.add(MaxPooling2D(2,2))
+    # mdl.add(BatchNormalization())
+
+    mdl.add(Conv2D(128, (3,3), 
+            activation='relu',
+            padding='same',
+            # kernel_regularizer='l2',
+            # kernel_initializer='normal'
+            ))
+
+    mdl.add(MaxPooling2D(2,2))
+    mdl.add(BatchNormalization())
 
     mdl.add(Flatten())
 
-    mdl.add(Dense(512, activation='relu'))
+    mdl.add(Dropout(0.75))
 
-    mdl.add(Dropout(0.25))
+    mdl.add(Dense(2048, activation='relu'))
+
+    mdl.add(Dropout(0.75))
+
+    mdl.add(Dense(1024, activation='relu'))
+
 
     mdl.add(
         Dense(units=6, activation='softmax')
         )
-
+ 
     return mdl
 
 # mdl = model()
