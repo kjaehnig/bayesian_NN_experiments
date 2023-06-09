@@ -23,4 +23,4 @@ Storage directory for deep convolutional neural network classifier in keras trai
 ![sea classification](https://github.com/kjaehnig/bayesian_NN_experiments/blob/main/bcnn_classifier/bmdl2_sea_prediction_uncertainty.png)
 
 #### Here we see an uncertain classification of another image of a sea.
-![sea classification](https://github.com/kjaehnig/bayesian_NN_experiments/blob/main/bcnn_classifier/bmdl2_sea__unsure_prediction_uncertainty.png)
+![sea classification](https://github.com/kjaehnig/bayesian_NN_experiments/blob/main/bcnn_classifier/bmdl2_seaunsure_prediction_uncertainty.png)
