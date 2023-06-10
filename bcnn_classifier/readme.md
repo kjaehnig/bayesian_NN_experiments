@@ -20,4 +20,4 @@
 ![sea classification](https://github.com/kjaehnig/bayesian_NN_experiments/blob/main/bcnn_classifier/bmdl2_sea_prediction_uncertainty.png)
 
 #### Here we see an uncertain classification of another image of a sea.
-![sea classification](https://github.com/kjaehnig/bayesian_NN_experiments/blob/main/bcnn_classifier/bmdl2_sea_unsure_prediction_uncertainty.png)
+![unsure sea classification](https://github.com/kjaehnig/bayesian_NN_experiments/blob/main/bcnn_classifier/bmdl2_sea_unsure_prediction_uncertainty.png)

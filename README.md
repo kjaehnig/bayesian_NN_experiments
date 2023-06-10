@@ -16,6 +16,6 @@ Repository for various experiments with Bayesian neural networks in TensorFlow
     ![unsure sea classification](https://github.com/kjaehnig/bayesian_NN_experiments/blob/main/bcnn_classifier/bmdl2_sea_unsure_prediction_uncertainty.png)
 
 
-2. Bayesian dense neural network classifier using Intel images
+2. Bayesian dense neural network classifier using MNIST 28x28 dataset with images flattened to vectors
 
     - Still work in progress.
