@@ -4,7 +4,7 @@ Repository for various experiments with Bayesian neural networks in TensorFlow
 
 ## Quick list of projects
 
-### Bayesian convolutional neural network classifier using Intel images
+## + ### Bayesian convolutional neural network classifier using Intel images
 
 #### Current best validation accuracy: ~83%
 
