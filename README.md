@@ -18,4 +18,7 @@ Repository for various experiments with Bayesian neural networks in TensorFlow
 
 2. Bayesian dense neural network classifier using MNIST 28x28 dataset with images flattened to vectors
 
-    - Still work in progress.
+    - Current best validation accuracy ~97%
+
+    - The difference in entropy distributions of correct/incorrect classifications is much higher than with the bcnn above.
+    ~[classification entropy distributions](https://github/kjaehnig/bayesian_NN_experiments/blob/main/bdense_NN_classifier/bdnn_classification_entropy.png)
