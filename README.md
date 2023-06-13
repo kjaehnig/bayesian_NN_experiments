@@ -21,4 +21,4 @@ Repository for various experiments with Bayesian neural networks in TensorFlow
     - Current best validation accuracy ~97%
 
     - The difference in entropy distributions of correct/incorrect classifications is much higher than with the bcnn above.
-    ![classification entropy distributions](https://github/kjaehnig/bayesian_NN_experiments/blob/main/bdense_NN_classifier/bdnn_classification_entropy.png)
+    ![classification entropy distributions](https://github/kjaehnig/bayesian_NN_experiments/blob/main/bdense_NN_classifier/bdnn_classification_entropy_plot.png)
